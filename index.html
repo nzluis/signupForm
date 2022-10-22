@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Projects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="leftSide">
+        <div class="logo-container">
+            <img src="/img/odin-lined.png" alt="logo-pic">
+            <h1>ODIN</h1>
+        </div>
+        <div class="credits">Photo by <a
+            href="https://unsplash.com/@rumpf?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Christina
+            Rumpf</a> on <a
+            href="https://unsplash.com/s/photos/kale?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        </div>
+    </div>
+    <div class="rightSide">
+        <div class="header-container">
+            <p>This is not a real service. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Nullam fringilla in arcu
+                molestie iaculis. Vivamus congue velit sit amet sapien
+                 imperdiet blandit. Donec quis elementum velit. In
+                  mollis ipsum nec condimentum blandit.</p>
+                  <br>
+            <p>You know you want to</p>
+        </div>
+        <div class="formSection-container">
+            <h4>Let's do this!</h4>
+            <form action="#">
+                <div class="formRow">
+                    <div class="formGroup">
+                        <label for="username">FIRST NAME</label>
+                        <input type="text" name="username" id="username" required>
+                    </div>
+                    <div class="formGroup">
+                        <label for="lastname">LAST NAME</label>
+                        <input type="text" name="lastname" id="lastname" required>
+                    </div>
+                </div>
+                <div class="formRow">
+                    <div class="formGroup">
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" placeholder="you_email@example.com" id="email" required>
+                    </div>
+                    <div class="formGroup">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" name="phone" placeholder="123-456-7890" pattern=".?(\d{3}).*(\d{3}).*(\d{4})" id="phone" required>
+                    </div>
+                </div>
+                <div class="formRow">
+                    <div class="formGroup">
+                        <label for="pwd1">PASSWORD</label>
+                        <input type="password" name="pw1" id="pwd1" required>
+                        <p class="pwdWarn"></p>
+                    </div>
+                    <div class="formGroup">
+                        <label for="pwd2">CONFIRM PASSWORD</label>
+                        <input type="password" name="pw2" id="pwd2" required>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="footer-container">
+            <button>Create Account</button>
+            <p>Already haven an account? <a href="#">Log in</a></p>
+        </div>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>

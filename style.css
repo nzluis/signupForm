@@ -1,0 +1,176 @@
+@font-face {
+    font-family: odinFont;
+    src: url(/fonts/Norse-Bold.otf);
+}
+
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.leftSide {
+    display: flex;
+    flex-direction: column;
+    background-image: url('/img/plant.avif');
+    background-size: cover;
+    width: 35%;
+    height: auto;
+    justify-content: space-between;
+    
+}
+
+.credits {
+    color: white;
+   text-align: center;
+}
+
+.logo-container {
+    background-color: rgba(0, 0, 0, .3);
+    margin-top: 2.9em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: odinFont;
+    font-size: 3.8em;
+    gap: .4em;
+    padding: 0.2em 0px;
+}
+
+img {
+    width: 16%;
+    height: auto;
+}
+
+.credits a {
+    color: white;
+}
+
+.rightSide {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.header-container {
+    font-size: larger;
+    font-weight: bold;
+    background-color: rgb(247, 247, 247);
+    
+}
+
+.header-container:first-child {
+    padding: 9rem 4rem 3rem 3rem;
+}
+
+.formSection-container {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, .15);
+    position: relative;
+    padding-bottom: 1.25rem;
+    
+}
+
+.formSection-container h4 {
+    font-weight: 500;
+    font-size: larger;
+    margin-left: 3rem;
+    margin-bottom: 1.25rem;
+    margin-top: 1.25rem;
+}
+
+form {
+    margin-left: 3rem;
+}
+
+.formRow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    margin-bottom: .5rem;
+}
+ 
+.pwdWarn {
+    font-size: x-small;
+    color: red;
+}
+
+form label {
+    font-weight: 200;
+    font-size: .7rem;
+}
+
+form input {
+    padding: .25rem .5rem;
+    margin-left: .15rem;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+}
+
+form input:hover {
+    border: 1px solid rgb(89, 117, 91);
+}
+form input:focus {
+    outline: none;
+    border: 1px solid rgb(89, 117, 91);  
+    box-shadow: 0 0 2px rgb(89, 117, 91);
+}
+
+
+
+.footer-container {
+    background-color: rgb(247, 247, 247);
+    padding: 3rem 3rem;
+    flex: 1;
+}
+
+button {
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    background-color: rgb(89, 117, 91);
+    color: white;
+    margin-bottom: 1.5rem;
+    border: none;
+    font-weight: bolder;
+    font-size: large;
+}
+
+button:hover {
+    box-shadow: 0px 0px 6px grey;
+    cursor:pointer;
+}
+
+.footer-container p {
+    font-weight: bolder;
+}
+
+.footer-container a {
+    color: rgb(89, 117, 91);
+}
+
+#phone:invalid:not(:placeholder-shown) {
+    border: 1px solid red;
+}
+
+#email:invalid:not(:placeholder-shown){
+    border: 1px solid red;
+}
+
+.noMatched {
+    border: 1px solid red;
+}
